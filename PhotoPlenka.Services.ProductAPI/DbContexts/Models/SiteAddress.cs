@@ -6,6 +6,10 @@ public class SiteAddress
 {
     [Key] 
     public int SiteAddressId { get; set; }
-    public SiteData SiteData { get; set; }
+
+    [Required] 
     public string AddressItem { get; set; }
+    
+    [Required] 
+    public SiteData SiteData { get; set; }
 }

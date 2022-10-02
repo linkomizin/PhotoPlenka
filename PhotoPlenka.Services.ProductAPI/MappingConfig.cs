@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using PhotoPlenka.Services.ProductAPI.DbContexts.Models;
-using PhotoPlenka.Services.ProductAPI.DbContexts.Models.Dto;
+using PhotoPlenka.Services.ProductAPI.DbContexts.Models.Dtos;
 
 namespace PhotoPlenka.Services.ProductAPI;
 

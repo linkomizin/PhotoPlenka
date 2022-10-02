@@ -1,7 +1,9 @@
 using AutoMapper;
+using Mango.Services.ProductAPI.Repository;
 using PhotoPlenka.Services.ProductAPI;
 using Microsoft.EntityFrameworkCore;
 using PhotoPlenka.Services.ProductAPI.DbContexts;
+using PhotoPlenka.Services.ProductAPI.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +20,10 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 IMapper mapper = MappingConfig.RegisterMap().CreateMapper();
 builder.Services.AddSingleton(mapper);
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+
+//repository
+builder.Services.AddScoped<ISiteDatatRepository, SiteDataRepository>();
 
 
 builder.Services.AddControllers();

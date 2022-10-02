@@ -1,4 +1,4 @@
-﻿namespace PhotoPlenka.Services.ProductAPI.DbContexts.Models.Dto;
+﻿namespace PhotoPlenka.Services.ProductAPI.DbContexts.Models.Dtos;
 
 public class ResponseDto
 {
