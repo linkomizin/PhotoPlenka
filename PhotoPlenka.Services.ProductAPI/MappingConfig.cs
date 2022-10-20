@@ -12,6 +12,9 @@ public class MappingConfig
         {
             config.CreateMap<SiteDataDto, SiteData>();
             config.CreateMap<SiteData, SiteDataDto>();
+            config.CreateMap<SiteAddressDto, SiteAddress>();
+            config.CreateMap<SiteAddress, SiteAddressDto>();
+            
         });
         return mappingConfig;
     }

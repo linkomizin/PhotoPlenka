@@ -24,6 +24,7 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 //repository
 builder.Services.AddScoped<ISiteDatatRepository, SiteDataRepository>();
+builder.Services.AddScoped<IAddressDataRepository, SiteAdressRepository>();
 
 
 builder.Services.AddControllers();
